@@ -1,8 +1,6 @@
 #!/bin/bash
 
 packages=(
-    "software-properties-common"
-    "apt-transport-https"
     "git"
     "curl"
     "wget"
@@ -23,8 +21,9 @@ repositories=(
     # "https://dl.hhvm.com/ubuntu"
 )
 
-# Update package list
-sudo apt update
+# Initial setup
+sudo apt-get update -y
+sudo apt-get install -y software-properties-common apt-transport-https
 
 # sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xB4112585D386EB94
 
