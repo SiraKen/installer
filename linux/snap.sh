@@ -10,9 +10,8 @@ snap refresh
 
 # Install packages
 for package in "${packages[@]}"; do
-  if [ "$package" != "" ]; then
-    printf "Installing $package...\n"
-    snap install $package
-  fi
+    if [ "$package" != "" ]; then
+        printf "Installing $package...\n"
+        snap install $package
+    fi
 done
-

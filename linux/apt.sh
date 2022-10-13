@@ -29,10 +29,10 @@ sudo apt-get install -y software-properties-common apt-transport-https
 
 # add-apt-repository
 for repository in "${repositories[@]}"; do
-  if [ "$repository" != "" ]; then
-    printf "Adding apt repository: $repository...\n"
-    sudo add-apt-repository $repository -y
-  fi
+    if [ "$repository" != "" ]; then
+        printf "Adding apt repository: $repository...\n"
+        sudo add-apt-repository $repository -y
+    fi
 done
 
 # Update package list
@@ -41,15 +41,15 @@ sudo apt update -y
 
 # Install packages
 for package in "${packages[@]}"; do
-  if [ "$package" != "" ]; then
-    printf "Installing $package...\n"
-    sudo apt install -y $package
-  fi
+    if [ "$package" != "" ]; then
+        printf "Installing $package...\n"
+        sudo apt install -y $package
+    fi
 
-  # Rename for bat
-  if [ "$package" == "bat" ]; then
-    mkdir -p ~/.local/bin
-    ln -s /usr/bin/batcat /usr/local/bin/bat
-  fi
+    # Rename for bat
+    if [ "$package" == "bat" ]; then
+        mkdir -p ~/.local/bin
+        ln -s /usr/bin/batcat /usr/local/bin/bat
+    fi
 done
 
