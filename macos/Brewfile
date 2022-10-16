@@ -149,6 +149,7 @@ brew 'ios-deploy'
 brew 'jless'
 brew 'elm'
 brew 'jesseduffield/lazygit/lazygit'
+brew 'ipfs' # ipfs/kubo
 # :Cask ------------------------------------------------------------------------
 cask 'google-chrome'
 cask 'brave-browser'
@@ -206,7 +207,7 @@ cask 'poedit'
 cask 'raspberry-pi-imager'
 cask 'sdformatter'
 cask 'unity-hub'
-cask 'ipfs'
+cask 'ipfs' # ipfs/ipfs-desktop
 cask 'local'
 cask 'font-monocraft'
 # :MAS - App Store --------------------------------------------------------------------
