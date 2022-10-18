@@ -1,25 +1,14 @@
 #!/bin/bash
 
-cat <<EOF
+packages=(
+    # sheepla/pingu
+    "github.com/sheepla/pingu@latest"
+    # fatih/gomodifytags
+    "github.com/fatih/gomodifytags@latest"
+)
 
---------------------------------------------------------------------------------
-  Go packages installer
---------------------------------------------------------------------------------
-
-Installing Go packages...
-
-EOF
-
-# sheepla/pingu
-go install github.com/sheepla/pingu@latest
-
-# fatih/gomodifytags
-go install github.com/fatih/gomodifytags@latest
-
-cat <<EOF
-
---------------------------------------------------------------------------------
-  Go packages installed!
---------------------------------------------------------------------------------
-
-EOF
+for package in "${packages[@]}"
+do
+    # go install $package
+    echo $package
+done

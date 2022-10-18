@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# List of cargo packages to install
 packages=(
     "du-dust"
 )

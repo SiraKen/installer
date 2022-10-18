@@ -149,6 +149,7 @@ brew 'ios-deploy'
 brew 'jless'
 brew 'elm'
 brew 'jesseduffield/lazygit/lazygit'
+brew 'jesseduffield/lazydocker/lazydocker'
 brew 'ipfs' # ipfs/kubo
 # :Cask ------------------------------------------------------------------------
 cask 'google-chrome'

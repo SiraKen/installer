@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# List of pip packages to install
 packages=(
-  "diagrams"
+    "diagrams"
 )
 
 # Install packages
@@ -12,5 +11,5 @@ pip install --upgrade pip
 
 for package in "${packages[@]}"
 do
-  pip install "$package"
+    pip install "$package"
 done
