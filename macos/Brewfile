@@ -151,6 +151,11 @@ brew 'elm'
 brew 'jesseduffield/lazygit/lazygit'
 brew 'jesseduffield/lazydocker/lazydocker'
 brew 'ipfs' # ipfs/kubo
+brew 'coursier/formulas/coursier'
+brew 'thefuck'
+brew 'gum'
+brew 'charmbracelet/tap/vhs'
+brew 'ttyd', args: ['HEAD']
 # :Cask ------------------------------------------------------------------------
 cask 'google-chrome'
 cask 'brave-browser'
