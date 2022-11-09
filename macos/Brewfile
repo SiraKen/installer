@@ -52,7 +52,8 @@ brew 'act'
 brew 'hugo'
 brew 'heroku'
 brew 'tree-sitter'
-brew 'neovim'
+brew 'emacs'
+brew 'neovim', args: ['HEAD']
 brew 'lua'
 brew 'luajit', args: ['HEAD']
 brew 'luarocks'
@@ -156,6 +157,10 @@ brew 'thefuck'
 brew 'gum'
 brew 'charmbracelet/tap/vhs'
 brew 'ttyd', args: ['HEAD']
+brew 'cloudflare/cloudflare/cloudflared'
+brew 'ghcup'
+brew 'zola'
+brew 'direnv'
 # :Cask ------------------------------------------------------------------------
 cask 'google-chrome'
 cask 'brave-browser'
@@ -216,6 +221,7 @@ cask 'unity-hub'
 cask 'ipfs' # ipfs/ipfs-desktop
 cask 'local'
 cask 'font-monocraft'
+cask 'microsoft-teams'
 # :MAS - App Store --------------------------------------------------------------------
 mas 'Messenger', id: 1480068668
 mas 'LINE', id: 539883307
