@@ -4,6 +4,7 @@ packages=(
     "typescript"
     "source-map-support"
     "prettier"
+    "@aws-amplify/cli"
 )
 
 # Install packages

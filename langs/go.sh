@@ -1,10 +1,14 @@
 #!/bin/bash
 
 packages=(
-    # sheepla/pingu
+    # pingu ping
     "github.com/sheepla/pingu@latest"
-    # fatih/gomodifytags
+
+    # Go tool to modify struct field tags
     "github.com/fatih/gomodifytags@latest"
+
+    # Terminal file manager
+    "github.com/antonmedv/llama@latest"
 )
 
 for package in "${packages[@]}"
