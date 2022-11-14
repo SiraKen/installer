@@ -163,6 +163,8 @@ brew 'ghcup'
 brew 'zola'
 brew 'direnv'
 brew 'fvm'
+brew 'gpg'
+brew 'borkdude/brew/clj-kondo'
 # :Cask ------------------------------------------------------------------------
 cask 'google-chrome'
 cask 'brave-browser'
