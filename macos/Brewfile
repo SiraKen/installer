@@ -15,6 +15,19 @@ tap 'heroku/brew'
 tap 'sidneys/homebrew'
 tap 'tgotwig/linux-dust'
 tap 'leoafarias/fvm'
+tap 'clojure/tools'
+tap 'sass/sass'
+tap 'supabase/tap'
+tap 'planetscale/tap'
+tap 'planetscale/tap'
+tap 'koekeishiya/formulae'
+tap 'tako8ki/tap'
+tap 'jesseduffield/lazygit'
+tap 'jesseduffield/lazydocker'
+tap 'coursier/formulas'
+tap 'charmbracelet/tap'
+tap 'cloudflare/cloudflare'
+tap 'borkdude/brew'
 # :Brew ------------------------------------------------------------------------
 brew 'bash'
 brew 'fish'
@@ -33,17 +46,17 @@ brew 'tree'
 brew 'symfony-cli/tap/symfony-cli'
 brew 'ethereum'
 brew 'solidity'
-brew 'clojure/tools/clojure'
+brew 'clojure'
 brew 'leiningen'
 brew 'sbcl'
 brew 'stack'
 brew 'go'
 brew 'mongodb-community'
-brew 'sass/sass/sass'
+brew 'sass'
 brew 'duck'
 brew 'awscli'
 brew 'aws/tap/lightsailctl'
-brew 'aws-sam-cli'
+# brew 'aws-sam-cli' # Failed to install
 brew 'dart'
 brew 'sqlite'
 brew 'terraform'
@@ -76,8 +89,6 @@ brew 'cdrtools'
 brew 'sidneys/homebrew/chntpw'
 brew 'kotlin'
 brew 'nim'
-brew 'blackhole-2ch'
-brew 'blackhole-16ch'
 brew 'pdfcrack'
 brew 'hydra'
 brew 'aircrack-ng'
@@ -85,17 +96,13 @@ brew 'hashcat'
 brew 'youtube-dl'
 brew 'mplayer'
 brew 'pdf2svg'
-brew 'vagrant'
-brew 'supabase/tap/supabase'
-brew 'planetscale/tap/pscale'
+brew 'supabase'
+brew 'pscale'
 brew 'cfonts'
 brew 'pandoc'
-brew 'brewlet'
 brew 'fx'
 brew 'arduino-cli'
-brew 'xquartz'
 brew 'zig'
-brew 'sf-symbols'
 brew 'neofetch'
 brew 'caddy'
 brew 'scala'
@@ -134,13 +141,12 @@ brew 'duf'
 brew 'dog'
 brew 'zplug'
 brew 'lua-language-server'
-brew 'lapce'
 brew 'httpie'
-brew 'koekeishiya/formulae/yabai'
-brew 'koekeishiya/formulae/skhd'
+brew 'yabai'
+brew 'skhd'
 brew 'bandwhich'
 brew 'wego'
-brew 'tako8ki/tap/gobang'
+brew 'gobang'
 brew 'watchman'
 brew 'cocoapods'
 brew 'streamlink'
@@ -150,27 +156,31 @@ brew 'erlang'
 brew 'ios-deploy'
 brew 'jless'
 brew 'elm'
-brew 'jesseduffield/lazygit/lazygit'
-brew 'jesseduffield/lazydocker/lazydocker'
+brew 'lazygit'
+brew 'lazydocker'
 brew 'ipfs' # ipfs/kubo
-brew 'coursier/formulas/coursier'
+brew 'coursier'
 brew 'thefuck'
 brew 'gum'
-brew 'charmbracelet/tap/vhs'
+brew 'vhs'
 brew 'ttyd', args: ['HEAD']
-brew 'cloudflare/cloudflare/cloudflared'
+brew 'cloudflared'
 brew 'ghcup'
 brew 'zola'
 brew 'direnv'
 brew 'fvm'
 brew 'gpg'
-brew 'borkdude/brew/clj-kondo'
+brew 'clj-kondo'
+brew 'minikube'
 # :Cask ------------------------------------------------------------------------
+# brew 'blackhole-2ch' # Unreadable, try cask
+# brew 'blackhole-16ch' # Unreadable, try cask
 cask 'google-chrome'
 cask 'brave-browser'
 cask 'vivaldi'
 cask 'firefox'
 cask 'firefox-developer-edition'
+cask 'blisk'
 cask 'google-drive'
 cask 'dropbox'
 cask 'iterm2'
@@ -190,6 +200,7 @@ cask 'spotify'
 cask 'vlc'
 cask 'steam'
 cask 'sublime-text'
+cask 'lapce'
 cask 'gitify'
 cask 'jetbrains-toolbox'
 cask 'tor-browser'
@@ -202,7 +213,8 @@ cask 'powershell'
 cask 'dotnet-sdk'
 cask 'wireshark'
 cask 'drawio'
-cask 'google-japanese-ime'
+# cask 'google-japanese-ime' # Failed to install
+cask 'alfred'
 # cask 'scenebuilder'
 # cask 'blender'
 cask 'cyberduck'
@@ -226,18 +238,17 @@ cask 'ipfs' # ipfs/ipfs-desktop
 cask 'local'
 cask 'font-monocraft'
 cask 'microsoft-teams'
+cask 'vagrant'
+cask 'brewlet'
+cask 'xquartz'
+cask 'sf-symbols'
 # :MAS - App Store --------------------------------------------------------------------
 mas 'Messenger', id: 1480068668
 mas 'LINE', id: 539883307
-# mas 'DaVinci Resolve', id: 571213070
 mas 'Magnet', id: 441258766
-mas 'Microsoft Excel', id: 462058435
-mas '1Password 7', id: 1333542190
 mas 'Twitter', id: 1482454543
 mas 'The Unarchiver', id: 425424353
-mas 'Microsoft PowerPoint', id: 462062816
 mas 'DaisyDisk', id: 411643860
-mas 'Microsoft Outlook', id: 985367838
 mas 'LanScan', id: 472226235
 mas 'Spark', id: 1176895641
 mas 'Sequel Ace', id: 1518036000
@@ -245,8 +256,12 @@ mas 'Slack', id: 803453959
 mas 'RunCat', id: 1429033973
 mas 'PopClip', id: 445189367
 mas 'Microsoft Word', id: 462054704
-mas 'Logic Pro', id: 634148309
-mas 'Compressor', id: 424390742
-mas 'MainStage', id: 634159523
-mas 'Motion', id: 434290957
-mas 'Final Cut Pro', id: 424389933
+mas 'Microsoft Excel', id: 462058435
+mas 'Microsoft PowerPoint', id: 462062816
+mas 'Microsoft Outlook', id: 985367838
+# mas 'DaVinci Resolve', id: 571213070
+# mas 'Final Cut Pro', id: 424389933
+# mas 'Motion', id: 434290957
+# mas 'Compressor', id: 424390742
+# mas 'Logic Pro', id: 634148309
+# mas 'MainStage', id: 634159523
