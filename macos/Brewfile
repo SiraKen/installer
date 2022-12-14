@@ -172,6 +172,7 @@ brew 'fvm'
 brew 'gpg'
 brew 'clj-kondo'
 brew 'minikube'
+brew 'qemu'
 # :Cask ------------------------------------------------------------------------
 # brew 'blackhole-2ch' # Unreadable, try cask
 # brew 'blackhole-16ch' # Unreadable, try cask
